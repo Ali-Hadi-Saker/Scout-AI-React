@@ -1,3 +1,4 @@
+import Button from "../../base/button";
 import Input from "../../base/input";
 import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
 
@@ -11,6 +12,7 @@ const Login = () => {
             <Input 
             icon={faLock}
             placeholder={'password'}/>
+            <Button/>
             
         </div>
     )
