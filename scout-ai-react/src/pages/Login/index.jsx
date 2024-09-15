@@ -1,9 +1,12 @@
+import React, { useState } from "react";
 import Button from "../../base/button";
 import Input from "../../base/input";
 import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
 import './style.css';
 
 const Login = () => {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
     return (
         <div className="flex column center page primary-bg">
             <div className="form-container flex column">
