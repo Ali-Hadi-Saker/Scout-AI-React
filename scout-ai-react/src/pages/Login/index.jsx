@@ -1,4 +1,4 @@
-import Input from "../../base";
+import Input from "../../base/input";
 import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
 
 const Login = () => {
