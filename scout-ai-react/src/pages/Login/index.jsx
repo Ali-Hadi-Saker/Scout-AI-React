@@ -11,22 +11,23 @@ const Login = () => {
     const handleEmailChange = (e) => {
         const newEmail = e.target.value;
         setEmail(newEmail);
-        console.log("Email:", newEmail);
+        console.log(newEmail);
+    }
+    const handlePasswordChange = (e) => {
+        const newPassword = e.target.value;
+        setPassword(newPassword);
+        console.log(newPassword)
     }
     return (
         <div className="flex column center page primary-bg">
             <div className="form-container flex column">
                 <h3>Hello,<br/> Welcome Back</h3>
                 <Input 
-                onTextChange={
-                    handleEmailChange
-                }
+                onTextChange={handleEmailChange}
                 icon={faEnvelope}
                 placeholder={'Email'}/>
                 <Input 
-                onTextChange={(e) => {
-                    setPassword(e.target.value)
-                }}
+                onTextChange={handlePasswordChange}
                 icon={faLock}
                 placeholder={'password'}/>
                 <Button/>
