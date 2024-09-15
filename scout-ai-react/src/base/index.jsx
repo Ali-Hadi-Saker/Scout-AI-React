@@ -1,9 +1,15 @@
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import './style.css'
+
+
 const Input = () => {
     return (
         <div>
-            <label >Email</label>
+            <FontAwesomeIcon icon={faEnvelope} className='input-icon'/>
             <input type="text"
-            placeholder="Enter your Email" />
+            placeholder="Email" />
         </div>
     )
 }
