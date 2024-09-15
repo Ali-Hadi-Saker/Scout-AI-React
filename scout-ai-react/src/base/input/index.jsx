@@ -5,7 +5,7 @@ import './style.css'
 
 const Input = ({icon, placeholder}) => {
     return (
-        <div className='input-container flex '>
+        <div className='input-container full-width flex '>
             <FontAwesomeIcon icon={icon} className='input-icon'/>
             <input type="text"
             placeholder={placeholder} />
