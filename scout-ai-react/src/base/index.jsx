@@ -6,7 +6,7 @@ import './style.css'
 
 const Input = () => {
     return (
-        <div>
+        <div className='input-container flex '>
             <FontAwesomeIcon icon={faEnvelope} className='input-icon'/>
             <input type="text"
             placeholder="Email" />
