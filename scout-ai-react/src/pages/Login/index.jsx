@@ -1,5 +1,5 @@
 import Input from "../../base";
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
 
 const Login = () => {
     return (
@@ -8,6 +8,10 @@ const Login = () => {
             <Input 
             icon={faEnvelope}
             placeholder={'Email'}/>
+            <Input 
+            icon={faLock}
+            placeholder={'password'}/>
+            
         </div>
     )
 }
