@@ -1,3 +1,6 @@
+import "./styles/utilities.css";
+import "./styles/colors.css";
+import "./styles/index.css";
 import Home from './pages/Home';
 import Login from './pages/Login';
 import './styles/App.css';

@@ -1,7 +1,7 @@
 const Login = () => {
     return (
-        <div>
-            <h3>Login</h3>
+        <div className="flex column center page">
+            <h3>Hello,<br/> Welcome Back</h3>
         </div>
     )
 }
