@@ -1,6 +1,6 @@
-import NavBar from "../../components/navbar";
+import NavBar from "../../components/Navbar";
 import { useLocation } from "react-router-dom";
-import Sidebar from "../../components/sidebar";
+import Sidebar from "../../components/Sidebar";
 import './style.css'
 const Home = () => {
     const location = useLocation()
