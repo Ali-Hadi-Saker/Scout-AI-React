@@ -10,7 +10,7 @@ const Home = () => {
     return(
         <div className="page flex column home-page">
             <NavBar username={username}/>
-            <div className="body-container full-height flex ">
+            <div className="body-container full-height full-width flex ">
                 <Sidebar/>
                 <UsersList/>           
             </div>

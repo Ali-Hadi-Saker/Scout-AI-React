@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { userRemote } from "../../data_source/remote/user_remote";
 import UserCard from "../UserCard";
+import './style.css'
 
 const UsersList = () => {
     const [users, setUsers] = useState([])
@@ -18,7 +19,7 @@ const UsersList = () => {
         fetchUsers()
     },[])
     return(
-        <div className="flex column fill-width">
+        <div className="flex column full-width user-list">
             {users.map((user)=>{
                 return (
                     <UserCard
