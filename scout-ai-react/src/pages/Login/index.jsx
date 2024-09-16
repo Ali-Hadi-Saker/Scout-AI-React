@@ -18,6 +18,10 @@ const Login = () => {
         setPassword(newPassword);
         console.log(newPassword)
     }
+
+    const handleLogin = ()=>{
+        
+    }
     return (
         <div className="flex column center page primary-bg">
             <div className="form-container flex column">
@@ -26,11 +30,13 @@ const Login = () => {
                 onTextChange={handleEmailChange}
                 icon={faEnvelope}
                 placeholder={'Email'}/>
+
                 <Input 
                 onTextChange={handlePasswordChange}
                 icon={faLock}
                 placeholder={'password'}/>
-                <Button/>
+
+                <Button onMousseClick={handleLogin}/>
             </div>
             
         </div>
