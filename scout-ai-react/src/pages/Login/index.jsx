@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "../../base/button";
 import Input from "../../base/input";
 import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
+import { auth } from "../../data_source/remote/auth_remote";
 import './style.css';
 
 const Login = () => {
@@ -19,8 +20,9 @@ const Login = () => {
         console.log(newPassword)
     }
 
-    const handleLogin = ()=>{
-        
+    const handleLogin = async ()=>{
+        const data = await auth.login(email, password)
+        console.log(data)
     }
     return (
         <div className="flex column center page primary-bg">

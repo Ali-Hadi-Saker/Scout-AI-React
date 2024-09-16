@@ -1,10 +1,10 @@
 import axios from 'axios'
 
 export const auth = {
-    login : async (email, pass) => {
+    login : async (email, password) => {
         const {data} = await axios.post("http://localhost:8080/users/login", {
             email,
-            pass
+            password
         })
         return data
     }
