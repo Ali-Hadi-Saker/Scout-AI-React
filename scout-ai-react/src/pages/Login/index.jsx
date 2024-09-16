@@ -28,7 +28,7 @@ const Login = () => {
         console.log(data)
         if(data.message === 'success'){
             token.saveToken(data.token)
-            navigate('/home', {state: {userName: data.user.fname}})
+            navigate('/home', {state: {username: data.user.fname}})
         }
     }
     return (
