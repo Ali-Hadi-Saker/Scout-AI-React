@@ -19,7 +19,14 @@ const UsersList = () => {
         fetchUsers()
     },[])
 
-    const handleDeleteUser = () =>{
+    const handleDeleteUser = async (id) =>{
+        try {
+            const {response} = await userRemote.deleteUser(id)
+            console.log(response)
+        } catch (error) {
+            console.log(error);
+            
+        }
         console.log("delete user");
         
     }
@@ -30,7 +37,7 @@ const UsersList = () => {
                     <UserCard
                         email={user.email}
                         name={user.fname}
-                        onDeleteClick={handleDeleteUser}/>
+                        onDeleteClick={handleDeleteUser(user._id)}/>
                 )
             })}
         </div>      
