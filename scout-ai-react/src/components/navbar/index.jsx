@@ -11,10 +11,7 @@ const NavBar = ({username})=>{
     return(
         <div className='flex navbar-container'>
             <h2>Admin Panel</h2>
-            <div className='search-container flex center gap rounded'>
-                <FontAwesomeIcon icon={faSearch} className='search-icon'/>
-                <input type="text" placeholder="Search for User " />
-            </div>
+            
             <div className='navbar-profile flex center gap '>
                 <FontAwesomeIcon icon={faUser} />
                 <p>{username}</p>

@@ -1,3 +1,12 @@
 .user-list{
     padding: 10px;
 }
+.search-container{
+    background-color: grey;
+    padding: 15px;
+    width: 30%;
+    margin-bottom: 20px;
+}
+.search-icon{
+    color: white;
+}

@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { userRemote } from "../../data_source/remote/user_remote";
 import UserCard from "../UserCard";
 import './style.css'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 const UsersList = () => {
     const [users, setUsers] = useState([])
     const fetchUsers = async () =>{
@@ -34,6 +35,10 @@ const UsersList = () => {
     }
     return(
         <div className="flex column full-width user-list">
+            <div className='search-container flex gap rounded'>
+                <FontAwesomeIcon icon={faSearch} className='search-icon'/>
+                <input type="text" placeholder="Search for User " />
+            </div>
             {users.map((user)=>{
                 return (
                     <UserCard
