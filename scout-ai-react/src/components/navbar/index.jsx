@@ -1,9 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faUser, faCaretDown  } from '@fortawesome/free-solid-svg-icons';
 import './style.css'
-import React from "react";
+import React, {useState} from "react";
 
 const NavBar = ()=>{
+    const [isDropDownOpen, SetIsDropDownOpen] = useState(false)
     return(
         <div className='flex navbar-container'>
             <h2>Admin Panel</h2>
@@ -14,9 +15,10 @@ const NavBar = ()=>{
             <div className='navbar-profile flex center gap '>
                 <FontAwesomeIcon icon={faUser}/>
                 <p>Name</p>
-                <div className='drop-down'>
+                {/* <div className='drop-down'>
                     <button>Logout</button>
-                </div>
+                </div> */}
+                <FontAwesomeIcon icon={faCaretDown }/>
             </div>
         </div>
         
