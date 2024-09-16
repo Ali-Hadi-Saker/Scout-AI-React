@@ -3,7 +3,7 @@ import { faSearch, faUser, faCaretDown  } from '@fortawesome/free-solid-svg-icon
 import './style.css'
 import React, {useState} from "react";
 
-const NavBar = ()=>{
+const NavBar = ({username})=>{
     const [isDropDownOpen, SetIsDropDownOpen] = useState(false)
     const toggleDropDown = () => {
         SetIsDropDownOpen(!isDropDownOpen)
@@ -17,7 +17,7 @@ const NavBar = ()=>{
             </div>
             <div className='navbar-profile flex center gap '>
                 <FontAwesomeIcon icon={faUser} />
-                <p>Name</p>
+                <p>{username}</p>
                 {/* <div className='drop-down'>
                     <button>Logout</button>
                 </div> */}
