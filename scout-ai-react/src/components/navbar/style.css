@@ -1,6 +1,16 @@
 .navbar-container{
-    background-color: aqua;
+    background-color: rgb(224, 222, 222);
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+}
+.navbar-profile{
+    padding: 10px;
+}
+.search-container{
+    background-color: grey;
+    padding: 10px;
+}
+.search-icon{
+    color: white;
 }
