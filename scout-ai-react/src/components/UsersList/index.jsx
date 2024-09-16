@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { userRemote } from "../../data_source/remote/user_remote";
 
 const UsersList = () => {
@@ -12,6 +12,10 @@ const UsersList = () => {
             
         }
     }
+
+    useEffect(()=>{
+        fetchUsers()
+    },[])
     return(
         <div>
 
