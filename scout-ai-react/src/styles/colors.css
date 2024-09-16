@@ -30,6 +30,14 @@
   background-color: #3cd4e4;
 }
 
+.grey-bg{
+  background-color: rgb(175, 174, 174);
+}
+.option-bg{
+  background-color: rgb(226, 219, 219);
+  
+}
+
 .primary-text {
   color: #0068b8;
 }

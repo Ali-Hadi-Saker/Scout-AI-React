@@ -1,4 +1,19 @@
 .sidebar{
-    background-color: aqua;
+    padding: 10px;
     width: 25%;
+}
+.sidebar h2 {
+    padding-bottom: 25px ;
+}
+.sidebar-list{
+    list-style: none;
+    gap: 5px
+}
+.sidebar-list li {
+    padding: 15px 0;
+    border-radius: 4px;
+}
+.sidebar-list li:hover{
+    background-color: #333 ;
+    color: #fff;
 }
