@@ -16,7 +16,7 @@ const Input = ({icon, placeholder,suffixIcon, onTextChange}) => {
             type={!suffixIcon? 'text': isPassVisible? 'text': 'password'}
             onChange={(e) => {onTextChange(e)}}
             placeholder={placeholder} />
-            {suffixIcon && <FontAwesomeIcon icon={isPassVisible? faEye : faEyeSlash} className='input-icon suffix-icon ' onClick={togglePassVisibility}/>}
+            {suffixIcon && <FontAwesomeIcon icon={isPassVisible? faEye : faEyeSlash} className='input-icon suffix-icon clickable' onClick={togglePassVisibility}/>}
         </div>
     )
 }

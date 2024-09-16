@@ -20,5 +20,6 @@ export const userRemote = {
         })
         return response
 
-    }
+    },
+    
 }
