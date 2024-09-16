@@ -10,6 +10,10 @@ const NavBar = ()=>{
             </div>
             <div className='navbar-profile'>
                 <FontAwesomeIcon icon={faUser}/>
+                <p>Name</p>
+                <div className='drop-down'>
+                    <button>Logout</button>
+                </div>
             </div>
         </div>
         
