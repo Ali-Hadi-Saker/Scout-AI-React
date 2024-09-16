@@ -52,6 +52,7 @@ const UsersList = () => {
             {filteredUsers.length > 0 ? (
                 filteredUsers.map((user) => (
                     <UserCard
+                        status={user.status}
                         key={user._id}
                         email={user.email}
                         name={user.fname}
