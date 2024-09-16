@@ -16,12 +16,19 @@ const NavBar = ()=>{
                 <input type="text" placeholder="Search ... " />
             </div>
             <div className='navbar-profile flex center gap '>
-                <FontAwesomeIcon icon={faUser} onClick={toggleDropDown}/>
+                <FontAwesomeIcon icon={faUser} />
                 <p>Name</p>
                 {/* <div className='drop-down'>
                     <button>Logout</button>
                 </div> */}
-                <FontAwesomeIcon icon={faCaretDown }/>
+                <FontAwesomeIcon icon={faCaretDown } onClick={toggleDropDown}/>
+                {isDropDownOpen && (
+                    <div>
+                        <ul>
+                            <li>Logout</li>
+                        </ul>
+                    </div>
+                )}
             </div>
         </div>
         
