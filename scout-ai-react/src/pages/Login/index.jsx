@@ -38,11 +38,14 @@ const Login = () => {
                 <Input 
                 onTextChange={handleEmailChange}
                 icon={faEnvelope}
-                placeholder={'Email'}/>
+                placeholder={'Email'}
+                type={'text'}/>
+                
 
                 <Input 
                 onTextChange={handlePasswordChange}
                 icon={faLock}
+                type={'password'}
                 placeholder={'password'}
                 suffixIcon={faEye}/>
                 
