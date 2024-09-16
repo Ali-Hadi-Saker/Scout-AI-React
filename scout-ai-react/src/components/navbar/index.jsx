@@ -23,8 +23,8 @@ const NavBar = ()=>{
                 </div> */}
                 <FontAwesomeIcon icon={faCaretDown } onClick={toggleDropDown}/>
                 {isDropDownOpen && (
-                    <div>
-                        <ul>
+                    <div className='drop-down-menu flex rounded column'>
+                        <ul >
                             <li>Logout</li>
                         </ul>
                     </div>

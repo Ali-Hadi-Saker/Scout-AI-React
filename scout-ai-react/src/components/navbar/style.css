@@ -14,3 +14,13 @@
 .search-icon{
     color: white;
 }
+.drop-down-menu ul{
+    list-style: none;
+}
+.drop-down-menu{
+    background-color: gray;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+}
