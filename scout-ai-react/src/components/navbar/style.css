@@ -1,0 +1,6 @@
+.navbar-container{
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
