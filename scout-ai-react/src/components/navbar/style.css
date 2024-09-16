@@ -6,8 +6,13 @@
     color: #fff;
     background-color: #b2cde9;
 }
+
 .logo{
-    width: 60px;
+    width: 70px;
+    height: 60px;
+    border-radius: 50%; 
+    object-fit: cover;
+
 }
 .navbar-profile{
     padding: 10px;
