@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "../../base/button";
 import Input from "../../base/input";
-import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faLock, faEye } from '@fortawesome/free-solid-svg-icons';
 import { auth } from "../../data_source/remote/auth_remote";
 import './style.css';
 import { authLocal } from "../../data_source/local/auth_local";
@@ -43,8 +43,9 @@ const Login = () => {
                 <Input 
                 onTextChange={handlePasswordChange}
                 icon={faLock}
-                placeholder={'password'}/>
-
+                placeholder={'password'}
+                suffixIcon={faEye}/>
+                
                 <Button onMousseClick={handleLogin}/>
             </div>
             
