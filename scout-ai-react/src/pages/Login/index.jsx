@@ -34,7 +34,7 @@ const Login = () => {
     return (
         <div className="flex column center page primary-bg">
             <div className="form-container flex column">
-                <h3>Hello,<br/> Welcome Back</h3>
+                <h3 className="white-text">Hello,<br/> Welcome Back</h3>
                 <Input 
                 onTextChange={handleEmailChange}
                 icon={faEnvelope}

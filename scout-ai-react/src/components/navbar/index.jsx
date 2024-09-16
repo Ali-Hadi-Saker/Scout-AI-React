@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faCaretDown  } from '@fortawesome/free-solid-svg-icons';
 import './style.css'
 import React, {useState} from "react";
+import logo from '../../assets/images/scout-ai.png'
 
 const NavBar = ({username})=>{
     const [isDropDownOpen, SetIsDropDownOpen] = useState(false)
@@ -10,6 +11,9 @@ const NavBar = ({username})=>{
     }
     return(
         <div className='flex navbar-container blue-bg'>
+            <div className="logo-container">
+                <img src={logo} alt="Logo" className="logo" />
+            </div>
             <h2>Admin Panel</h2>
             
             <div className='navbar-profile flex center gap clickable'>
