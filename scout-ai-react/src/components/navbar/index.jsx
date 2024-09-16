@@ -9,10 +9,10 @@ const NavBar = ({username})=>{
         SetIsDropDownOpen(!isDropDownOpen)
     }
     return(
-        <div className='flex navbar-container'>
+        <div className='flex navbar-container blue-bg'>
             <h2>Admin Panel</h2>
             
-            <div className='navbar-profile flex center gap '>
+            <div className='navbar-profile flex center gap clickable'>
                 <FontAwesomeIcon icon={faUser} />
                 <p>{username}</p>
                 <FontAwesomeIcon icon={faCaretDown } onClick={toggleDropDown} className='clickable'/>

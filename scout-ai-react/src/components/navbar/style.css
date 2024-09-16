@@ -1,29 +1,51 @@
 .navbar-container{
-    background-color: rgb(224, 222, 222);
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    background-color: #343a40;
 }
 .navbar-profile{
     padding: 10px;
+    background-color: #495057; 
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+.navbar-profile:hover {
+    background-color: #6c757d;
 }
 
 .drop-down-menu ul{
     list-style: none;
 }
 .drop-down-menu{
-    background-color: rgb(184, 183, 183);
+    background-color: #495057;
     position: absolute;
     top: 60px;
     right: 20px;
-    padding: 4px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: 150px;
+
+}
+
+.drop-down-menu li {
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+.drop-down-menu li:hover {
+    background-color: #6c757d; 
 
 }
 .logout{
-    color: red;
-    padding: 10px;
-
+    color: #dc3545;
 }
-.logout:hover{
-    background-color: rgb(212, 207, 207);
+.logout:hover {
+    background-color: #6c757d; 
 }
