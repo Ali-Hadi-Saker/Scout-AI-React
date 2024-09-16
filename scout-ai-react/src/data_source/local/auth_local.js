@@ -4,5 +4,8 @@ export const authLocal = {
     },
     getToken : () => {
         return localStorage.getItem('token')
+    },
+    clearToken: () => {
+        localStorage.clear()
     }
 }

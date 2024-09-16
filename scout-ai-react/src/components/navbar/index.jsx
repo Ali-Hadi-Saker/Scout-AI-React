@@ -4,6 +4,7 @@ import './style.css'
 import React, {useState} from "react";
 import logo from '../../assets/images/scout-ai.png'
 import { useNavigate } from "react-router-dom";
+import { authLocal } from '../../data_source/local/auth_local';
 
 const NavBar = ({username})=>{
     const navigate = useNavigate()
@@ -12,6 +13,7 @@ const NavBar = ({username})=>{
         SetIsDropDownOpen(!isDropDownOpen)
     }
     const handleLogout = () =>{
+        authLocal.clearToken()
         navigate('/')
     }
     return(
