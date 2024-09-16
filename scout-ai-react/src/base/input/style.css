@@ -15,4 +15,6 @@ input::placeholder {
 input{
     background: transparent;
     color: white;
+    border: none; 
+    outline: none;
 }
