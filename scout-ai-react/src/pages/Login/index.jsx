@@ -11,10 +11,14 @@ const Login = () => {
     const navigate = useNavigate()
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [emailError, setEmailError] = useState("");
 
     const handleEmailChange = (e) => {
         const newEmail = e.target.value;
         setEmail(newEmail);
+        if(!newEmail){
+            setEmailError("")
+        }
         console.log(newEmail);
     }
     const handlePasswordChange = (e) => {
@@ -32,7 +36,7 @@ const Login = () => {
     const handleLogin = async ()=>{
         const verifyEmail = validEmail(email)
         if(!verifyEmail){
-            console.log('invalid mail');
+            setEmailError("Invalid email format.")
             
         }else{
             const data = await auth.login(email, password)
@@ -51,7 +55,8 @@ const Login = () => {
                 <Input 
                 onTextChange={handleEmailChange}
                 icon={faEnvelope}
-                placeholder={'Email'}/>               
+                placeholder={'Email'}/>   
+                {emailError && <p className="error-text">{emailError}</p>}            
                 <Input 
                 onTextChange={handlePasswordChange}
                 icon={faLock}
