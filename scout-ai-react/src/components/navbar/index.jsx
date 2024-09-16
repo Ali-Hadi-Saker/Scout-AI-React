@@ -3,11 +3,16 @@ import { faUser, faCaretDown  } from '@fortawesome/free-solid-svg-icons';
 import './style.css'
 import React, {useState} from "react";
 import logo from '../../assets/images/scout-ai.png'
+import { useNavigate } from "react-router-dom";
 
 const NavBar = ({username})=>{
+    const navigate = useNavigate()
     const [isDropDownOpen, SetIsDropDownOpen] = useState(false)
     const toggleDropDown = () => {
         SetIsDropDownOpen(!isDropDownOpen)
+    }
+    const handleLogout = () =>{
+        navigate('/')
     }
     return(
         <div className='flex navbar-container blue-bg'>
@@ -23,7 +28,7 @@ const NavBar = ({username})=>{
                 {isDropDownOpen && (
                     <div className='drop-down-menu flex rounded column'>
                         <ul >
-                            <li className='logout bold clickable full-width'>Logout</li>
+                            <li className='logout bold clickable full-width' onClick={handleLogout}>Logout</li>
                         </ul>
                     </div>
                 )}
