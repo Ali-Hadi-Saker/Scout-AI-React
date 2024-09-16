@@ -4,7 +4,7 @@ import Input from "../../base/input";
 import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
 import { auth } from "../../data_source/remote/auth_remote";
 import './style.css';
-import { token } from "../../data_source/local/token";
+import { authLocal, token } from "../../data_source/local/auth_local";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -27,7 +27,7 @@ const Login = () => {
         const data = await auth.login(email, password)
         console.log(data)
         if(data.message === 'success'){
-            token.saveToken(data.token)
+            authLocal.saveToken(data.token)
             navigate('/home', {state: {username: data.user.fname}})
         }
     }

@@ -1,9 +1,9 @@
 import axios from 'axios'
-import {token, token} from '../local/token'
+import {authLocal} from '../local/auth_local'
 
 export const userRemote = {
     getAllUsers: async() => {
-        const token = token.getToken()
+        const token = authLocal.getToken()
         const {data} = await axios.get("http://localhost:8080/users/",{
             headers: {
                 Authorization: `Bearer ${token}`
