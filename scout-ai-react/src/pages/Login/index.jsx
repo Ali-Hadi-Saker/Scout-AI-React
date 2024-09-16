@@ -5,8 +5,10 @@ import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
 import { auth } from "../../data_source/remote/auth_remote";
 import './style.css';
 import { token } from "../../data_source/local/token";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+    const navigate = useNavigate()
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -26,6 +28,7 @@ const Login = () => {
         console.log(data)
         if(data.message === 'success'){
             token.saveToken(data.token)
+            navigate('/home')
         }
     }
     return (
