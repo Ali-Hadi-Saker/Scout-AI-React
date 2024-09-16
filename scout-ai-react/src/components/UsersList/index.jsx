@@ -18,13 +18,19 @@ const UsersList = () => {
     useEffect(()=>{
         fetchUsers()
     },[])
+
+    const handleDeleteUser = () =>{
+        console.log("delete user");
+        
+    }
     return(
         <div className="flex column full-width user-list">
             {users.map((user)=>{
                 return (
                     <UserCard
                         email={user.email}
-                        name={user.fname}/>
+                        name={user.fname}
+                        onDeleteClick={handleDeleteUser}/>
                 )
             })}
         </div>      

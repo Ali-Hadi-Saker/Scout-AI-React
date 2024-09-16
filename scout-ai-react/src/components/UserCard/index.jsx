@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faTrash  } from '@fortawesome/free-solid-svg-icons';
 import "./style.css"
-const UserCard = ({name, email}) => {
+const UserCard = ({name, email, onDeleteClick}) => {
     return(
         <div className="card-container flex ">
             <div className="username flex center">
@@ -10,7 +10,7 @@ const UserCard = ({name, email}) => {
             </div>
             <p>{email}</p>
             <p>status</p>
-            <FontAwesomeIcon icon={faTrash}/>
+            <FontAwesomeIcon icon={faTrash} className='remove-icon clickable' onClick={onDeleteClick}/>
         </div>
     )
 }

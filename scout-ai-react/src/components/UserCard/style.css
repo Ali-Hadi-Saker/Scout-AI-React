@@ -1,11 +1,19 @@
 .card-container{
-    background-color: aqua;
+    /* background-color: aqua; */
     justify-content: space-between;
     align-items: center;
     width: 70%;
     padding: 10px 20px;
     height: 40px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 }
 .username{
     gap: 10px;
+}
+.remove-icon{
+    color: red
 }
