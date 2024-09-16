@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faRemove, faTrash  } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faTrash  } from '@fortawesome/free-solid-svg-icons';
 import "./style.css"
 const UserCard = () => {
     return(

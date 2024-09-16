@@ -4,7 +4,7 @@ import Input from "../../base/input";
 import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
 import { auth } from "../../data_source/remote/auth_remote";
 import './style.css';
-import { authLocal, token } from "../../data_source/local/auth_local";
+import { authLocal } from "../../data_source/local/auth_local";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {

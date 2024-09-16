@@ -1,8 +1,8 @@
-import NavBar from "../../components/Navbar";
 import { useLocation } from "react-router-dom";
-import Sidebar from "../../components/Sidebar";
 import UserCard from "../../components/UserCard"
 import './style.css'
+import Sidebar from "../../components/Sidebar";
+import NavBar from "../../components/Navbar";
 const Home = () => {
     const location = useLocation()
     const username = location.state.username
