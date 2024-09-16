@@ -1,8 +1,12 @@
-const UsersList = () => {
+import { useState } from "react";
+import { userRemote } from "../../data_source/remote/user_remote";
 
-    const fetchUsers = () =>{
+const UsersList = () => {
+    const [users, setUsers] = useState([])
+    const fetchUsers = async () =>{
         try {
-            
+            const data = await userRemote.getAllUsers()
+            setUsers(data)
         } catch (error) {
             console.log(error);
             
@@ -11,7 +15,7 @@ const UsersList = () => {
     return(
         <div>
 
-        </div>
+        </div>      
     )
 }
 
