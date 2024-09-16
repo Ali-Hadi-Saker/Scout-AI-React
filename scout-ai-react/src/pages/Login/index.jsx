@@ -23,13 +23,26 @@ const Login = () => {
         console.log(newPassword)
     }
 
+    const validEmail = (email) => {
+        // Regex for email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    };
+
     const handleLogin = async ()=>{
-        const data = await auth.login(email, password)
-        console.log(data)
-        if(data.message === 'success'){
-            authLocal.saveToken(data.token)
-            navigate('/home', {state: {username: data.user.fname}})
+        const verifyEmail = validEmail(email)
+        if(!verifyEmail){
+            console.log('invalid mail');
+            
+        }else{
+            const data = await auth.login(email, password)
+            console.log(data)
+            if(data.message === 'success'){
+                authLocal.saveToken(data.token)
+                navigate('/home', {state: {username: data.user.fname}})
+            }
         }
+        
     }
     return (
         <div className="flex column center page primary-bg">
@@ -38,14 +51,10 @@ const Login = () => {
                 <Input 
                 onTextChange={handleEmailChange}
                 icon={faEnvelope}
-                placeholder={'Email'}
-                type={'text'}/>
-                
-
+                placeholder={'Email'}/>               
                 <Input 
                 onTextChange={handlePasswordChange}
                 icon={faLock}
-                type={'password'}
                 placeholder={'password'}
                 suffixIcon={faEyeSlash}/>
                 

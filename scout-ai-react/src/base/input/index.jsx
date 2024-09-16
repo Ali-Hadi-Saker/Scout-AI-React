@@ -4,7 +4,7 @@ import './style.css'
 import { faEyeSlash, faEye } from '@fortawesome/free-solid-svg-icons';
 
 
-const Input = ({icon, placeholder,suffixIcon, onTextChange, type}) => {
+const Input = ({icon, placeholder,suffixIcon, onTextChange}) => {
     const [isPassVisible, setIsPassVisible] = useState(false)
     const togglePassVisibility = () => {
         setIsPassVisible(!isPassVisible)
