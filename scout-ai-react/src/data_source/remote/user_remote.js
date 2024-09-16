@@ -13,7 +13,7 @@ export const userRemote = {
     },
     deleteUser: async (id) => {
         const token = authLocal.getToken()
-        const response = await axios.get(`http://localhost:8080/users/deleteUser/:${id}`,{
+        const response = await axios.delete(`http://localhost:8080/users/deleteUser/${id}`,{
             headers: {
                 Authorization: `Bearer ${token}`
             }

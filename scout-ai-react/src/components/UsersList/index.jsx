@@ -23,11 +23,12 @@ const UsersList = () => {
         try {
             const {response} = await userRemote.deleteUser(id)
             console.log(response)
+            console.log("delete user");
+
         } catch (error) {
             console.log(error);
             
         }
-        console.log("delete user");
         
     }
     return(
@@ -37,7 +38,7 @@ const UsersList = () => {
                     <UserCard
                         email={user.email}
                         name={user.fname}
-                        onDeleteClick={handleDeleteUser(user._id)}/>
+                        onDeleteClick={() => handleDeleteUser(user._id)}/>
                 )
             })}
         </div>      
