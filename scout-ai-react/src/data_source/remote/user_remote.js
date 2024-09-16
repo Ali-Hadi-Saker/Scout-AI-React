@@ -1,3 +1,8 @@
 import axios from 'axios'
-import {token} from '../local/token'
+import {token, token} from '../local/token'
 
+export const userRemote = {
+    getAllUsers: async() => {
+        
+    }
+}
