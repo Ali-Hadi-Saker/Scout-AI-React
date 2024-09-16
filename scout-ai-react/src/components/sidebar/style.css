@@ -10,12 +10,14 @@
 }
 .sidebar-list{
     list-style: none;
-    gap: 5px
+    gap: 5px;
+
 }
 .sidebar-list li {
     padding: 15px ;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: 0.3s ease, color 0.3s ease;
     color: #555;
+
 }
 .sidebar-list li:hover{
     background-color: #007BFF; 

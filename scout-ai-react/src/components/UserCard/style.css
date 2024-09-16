@@ -1,31 +1,37 @@
-.card-container{
-    /* background-color: aqua; */
+.card-container {
     justify-content: space-between;
-    align-items: center;
     width: 70%;
-    padding: 10px 20px;
-    height: 40px;
-    background-color: #f9f9f9;
     padding: 15px;
-    border-radius: 4px;
+    background-color: #f9f9f9;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
 }
+
+.email {
+    flex: 2; 
+}
+
+.status-container {
+    gap: 8px;
+    flex: 1; 
+}
+
 .status-indicator {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: grey;
+    background-color: grey; 
 }
+
 .status-indicator.green {
     background-color: green;
 }
+
 .status-indicator.red {
     background-color: red;
 }
-.username{
-    gap: 10px;
-}
-.remove-icon{
-    color: red
+
+.remove-icon {
+    color: red;
+    cursor: pointer;
 }
