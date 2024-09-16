@@ -1,13 +1,16 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faRemove  } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faRemove, faTrash  } from '@fortawesome/free-solid-svg-icons';
+import "./style.css"
 const UserCard = () => {
     return(
-        <div className="card-container flex">
-            <FontAwesomeIcon icon={faUser}/>
-            <p>username</p>
+        <div className="card-container flex ">
+            <div className="username flex center">
+                <FontAwesomeIcon icon={faUser}/>
+                <p>username</p>
+            </div>
             <p>email@gmail.com</p>
             <p>status</p>
-            <FontAwesomeIcon icon={faRemove}/>
+            <FontAwesomeIcon icon={faTrash}/>
         </div>
     )
 }

@@ -1,0 +1,11 @@
+.card-container{
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    padding: 10px 20px;
+    height: 40px;
+}
+.username{
+    gap: 10px;
+}
