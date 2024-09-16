@@ -1,7 +1,8 @@
+import './style.css'
 const Sidebar = () => {
     return(
-        <div>
-            <h2>side abr</h2>
+        <div className="sidebar flex column full-height">
+            <h2>sidebar</h2>
         </div>
     )
 } 

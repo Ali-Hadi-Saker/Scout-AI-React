@@ -1,12 +1,17 @@
 import NavBar from "../../components/navbar";
 import { useLocation } from "react-router-dom";
+import Sidebar from "../../components/sidebar";
+import './style.css'
 const Home = () => {
     const location = useLocation()
     const username = location.state.username
     console.log(username)
     return(
-        <div>
-            <NavBar username={username}/>            
+        <div className="page flex column home-page">
+            <NavBar username={username}/>
+            <div className="body-container full-height flex ">
+                <Sidebar/>            
+            </div>
         </div>
     )
 }
