@@ -23,6 +23,7 @@ const UsersList = () => {
         try {
             const {response} = await userRemote.deleteUser(id)
             console.log(response)
+            setUsers(users.filter(user => user._id !== id));
             console.log("delete user");
 
         } catch (error) {
