@@ -13,7 +13,7 @@ const NavBar = ()=>{
             <h2>Admin Panel</h2>
             <div className='search-container flex center gap rounded'>
                 <FontAwesomeIcon icon={faSearch} className='search-icon'/>
-                <input type="text" placeholder="Search ... " />
+                <input type="text" placeholder="Search for User " />
             </div>
             <div className='navbar-profile flex center gap '>
                 <FontAwesomeIcon icon={faUser} />
@@ -21,11 +21,11 @@ const NavBar = ()=>{
                 {/* <div className='drop-down'>
                     <button>Logout</button>
                 </div> */}
-                <FontAwesomeIcon icon={faCaretDown } onClick={toggleDropDown}/>
+                <FontAwesomeIcon icon={faCaretDown } onClick={toggleDropDown} className='clickable'/>
                 {isDropDownOpen && (
                     <div className='drop-down-menu flex rounded column'>
                         <ul >
-                            <li>Logout</li>
+                            <li className='logout bold clickable full-width'>Logout</li>
                         </ul>
                     </div>
                 )}

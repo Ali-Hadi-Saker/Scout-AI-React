@@ -18,9 +18,18 @@
     list-style: none;
 }
 .drop-down-menu{
-    background-color: gray;
+    background-color: rgb(184, 183, 183);
     position: absolute;
     top: 60px;
     right: 20px;
+    padding: 4px;
+
+}
+.logout{
+    color: red;
     padding: 10px;
+
+}
+.logout:hover{
+    background-color: rgb(212, 207, 207);
 }
