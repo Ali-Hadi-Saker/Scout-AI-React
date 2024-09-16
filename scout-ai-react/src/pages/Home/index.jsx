@@ -1,8 +1,8 @@
 import { useLocation } from "react-router-dom";
-import UserCard from "../../components/UserCard"
 import './style.css'
 import Sidebar from "../../components/Sidebar";
 import NavBar from "../../components/Navbar";
+import UsersList from "../../components/UsersList";
 const Home = () => {
     const location = useLocation()
     const username = location.state.username
@@ -12,7 +12,7 @@ const Home = () => {
             <NavBar username={username}/>
             <div className="body-container full-height flex ">
                 <Sidebar/>
-                <UserCard/>           
+                <UsersList/>           
             </div>
         </div>
     )
