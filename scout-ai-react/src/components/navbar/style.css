@@ -14,19 +14,20 @@
 }
 .navbar-profile{
     padding: 10px;
-    background-color: #679dd3; 
-    border-radius: 30px;
+    background-color: #bfc0c2; 
+    border-radius: 8px;
     transition: background-color 0.3s ease;
 }
 .navbar-profile:hover {
-    background-color: #8abeec;
+    background-color: #646566;
+    color: #fff;
 }
 
 .drop-down-menu ul{
     list-style: none;
 }
 .drop-down-menu{
-    background-color: #6ba5e0; 
+    background-color: #bfc0c2; 
     position: absolute;
     top: 60px;
     right: 20px;
@@ -41,14 +42,15 @@
 .drop-down-menu li {
     padding: 10px;
     font-size: 1rem;
-    color: #fff;
+    color: #333;
     text-align: center;
+    border-radius: 8px;
+
     transition: background-color 0.3s ease;
 }
 .drop-down-menu li:hover {
-    background-color: #8abeec;
-
-
+    background-color: #646566;
+    color: #fff;
 }
 .logout{
     color: #dc3545;

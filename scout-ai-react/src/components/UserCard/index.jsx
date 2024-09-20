@@ -4,7 +4,7 @@ import "./style.css"
 const UserCard = ({name, email, onDeleteClick, status}) => {
     const userStatus = status === 'online'? 'green' : 'red'
     return(
-        <div className="card-container flex center">
+        <div className="card-container flex center full-width">
             <div className="username flex gap center">
                 <FontAwesomeIcon icon={faUser}/>
                 <p>{name}</p>
