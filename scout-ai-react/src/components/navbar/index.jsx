@@ -17,7 +17,7 @@ const NavBar = ({username})=>{
         navigate('/')
     }
     return(
-        <div className='flex navbar-container blue-bg'>
+        <div className='flex navbar-container white-bg black-text'>
             <div className="logo-container">
                 <img src={logo} alt="Logo" className="logo" />
             </div>
